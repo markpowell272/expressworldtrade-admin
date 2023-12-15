@@ -1,0 +1,77 @@
+.home-container {
+  margin: 80px;
+  width: 1000px;
+}
+
+.home-container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 300px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.home-container form input {
+  border: none;
+  outline: none;
+}
+.home-container .user-container {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.home-container .user-container div {
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 30px 10px 10px;
+}
+
+.home-container .user-container div .icon {
+  padding: 10px;
+  color: var(--secondary);
+  font-size: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 400px) {
+  .home-container {
+    margin-top: 90px;
+    margin-left: 70px;
+  }
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+table thead {
+  color: white;
+  background-color: var(--primary);
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgb(207, 204, 204);
+}
+
+@media screen and (max-width: 1200px) {
+  .table {
+    width: 100%;
+    overflow-x: scroll;
+    border: 1px solid black;
+  }
+  table {
+    width: 1000px;
+  }
+}
